@@ -93,6 +93,7 @@ def signup():
         #check password
         if password == '':
             password_error = 'Password cannot be empty'
+            verify_error = 'Password cannot be empty'
         elif password.find(' ') >= 1:
             password_error = 'No space allowed in password.'
         elif len(password) < 3 or len(password) > 20:
